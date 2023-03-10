@@ -17,21 +17,22 @@ functions.verificando_tela_aberta()
 
 with open ('dados.txt','r') as file:
     for linha in file:
-        cod_empresa = linha.split(',')[0]
-        nro_nota = linha.split(',')[1]
-        data_emissao = linha.split(',')[2]
-        data_vencimento = linha.split(',')[3]
-        cod_parceiro = linha.split(',')[4]
-        tipo_negociacao = linha.split(',')[5]    
-        primeiro_aprovador = linha.split(',')[6]
-        segundo_aprovador = linha.split(',')[7]
-        observacao = linha.split(',')[8]
-        cod_produto = linha.split(',')[9]
-        quantidade = linha.split(',')[10]
-        valor = linha.split(',')[11]
-        projeto = linha.split(',')[12]
-        centro_resultado = linha.split(',')[13]
-        natureza = linha.split(',')[14]
+        dados = linha.split(',')
+        cod_empresa = dados[0]
+        nro_nota = dados[1]
+        data_emissao = dados[2]
+        data_vencimento = dados[3]
+        cod_parceiro = dados[4]
+        tipo_negociacao = dados[5]
+        primeiro_aprovador = dados[6]
+        segundo_aprovador = dados[7]
+        observacao = dados[8]
+        cod_produto = dados[9]
+        quantidade = dados[10]
+        valor = dados[11]
+        projeto = dados[12]
+        centro_resultado = dados[13]
+        natureza = dados[14]
 
         
         functions.aguardando_tela_carregar()
