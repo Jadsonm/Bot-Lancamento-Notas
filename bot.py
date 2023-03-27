@@ -5,11 +5,6 @@ import functions
 pyautogui.PAUSE = 0.9
 
 
-
-
-
-
-
 keyboard.wait('s')
 
 functions.verificando_tela_aberta()
