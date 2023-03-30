@@ -1,0 +1,10 @@
+import pytesseract
+from PIL import Image
+
+pdf_image = Image.open('jadson.pdf')
+
+gray_image = pdf_image.convert('L')
+
+text = pytesseract.image_to_string(gray_image)
+
+print(text)
